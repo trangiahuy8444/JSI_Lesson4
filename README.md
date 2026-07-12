@@ -3,7 +3,7 @@
 ## Học sinh: Clone homework
 
 ```bash
-git clone https://github.com/USERNAME/JSI.git
+git clone https://github.com/trangiahuy8444/JSI_Lesson4.git
 cd JSI
 ```
 
@@ -18,7 +18,7 @@ Giáo viên sẽ thông báo khi publish branch đáp án. Học sinh chạy:
 ### Cách 1: Clone mới (khuyến nghị)
 
 ```bash
-git clone -b lesson04-complete https://github.com/USERNAME/JSI.git JSI-complete
+git clone -b lesson04-complete https://github.com/trangiahuy8444/JSI_Lesson4.git JSI-complete
 cd JSI-complete
 ```
 
