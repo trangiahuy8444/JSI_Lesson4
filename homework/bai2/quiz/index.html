@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Quiz</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Container chính — trang chọn category/difficulty trước khi chơi -->
+  <div class="container">
+    <h1 class="title">Quick Quiz</h1>
+
+    <!-- Form chọn cấu hình quiz -->
+    <form class="select-form">
+      <!-- Dropdown danh mục câu hỏi (value = ID category trên Open Trivia DB) -->
+      <label for="category">Select Category</label>
+      <select name="category" id="category">
+        <option value="">Any Category</option>
+        <option value="9">General Knowledge</option>
+        <option value="10">Books</option>
+        <option value="11">Film</option>
+        <option value="12">Music</option>
+        <option value="17">Science &amp; Nature</option>
+        <option value="18">Computers</option>
+        <option value="21">Sports</option>
+        <option value="22">Geography</option>
+        <option value="23">History</option>
+      </select>
+
+      <!-- Dropdown độ khó — easy / medium / hard -->
+      <label for="difficulty">Select Difficulty</label>
+      <select name="difficulty" id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </form>
+
+    <!-- Nút bắt đầu quiz — xử lý bởi home.js -->
+    <a class="btn" id="playBtn" href="#">Play</a>
+    <!-- Nút xem bảng xếp hạng — chuyển thẳng sang highscores.html -->
+    <a class="btn btn-secondary" href="highscores.html">Highscores</a>
+  </div>
+
+  <!-- Logic trang chủ: lưu lựa chọn + chuyển trang -->
+  <script src="js/home.js"></script>
+</body>
+</html>

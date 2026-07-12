@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Quiz — Play</title>
+  <link rel="stylesheet" href="css/game.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <!-- Màn hình loading — hiện khi đang gọi API lấy câu hỏi -->
+    <div id="loader" class="loader">
+      <p>Đang tải câu hỏi...</p>
+    </div>
+
+    <!-- Khu vực chơi quiz — ẩn lúc đầu, hiện sau khi load xong câu hỏi -->
+    <div id="game" style="display: none;">
+      <!-- Thanh trên: số câu hiện tại + điểm -->
+      <div class="top-bar">
+        <div class="top-item">
+          <span class="label">Câu hỏi</span>
+          <span id="questionCounter">1 / 10</span>
+        </div>
+        <div class="top-item">
+          <span class="label">Điểm</span>
+          <span id="score">0</span>
+        </div>
+      </div>
+
+      <!-- Nội dung câu hỏi -->
+      <h2 id="question">Câu hỏi sẽ hiện ở đây</h2>
+
+      <!-- 4 nút đáp án A, B, C, D — nội dung được gán bởi game.js -->
+      <div class="choices">
+        <div class="choice-container" data-index="0">
+          <span class="choice-prefix">A</span>
+          <span class="choice-text"></span>
+        </div>
+        <div class="choice-container" data-index="1">
+          <span class="choice-prefix">B</span>
+          <span class="choice-text"></span>
+        </div>
+        <div class="choice-container" data-index="2">
+          <span class="choice-prefix">C</span>
+          <span class="choice-text"></span>
+        </div>
+        <div class="choice-container" data-index="3">
+          <span class="choice-prefix">D</span>
+          <span class="choice-text"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+    Modal lưu điểm — hiện sau khi trả lời hết 10 câu
+    User nhập tên → bấm "Lưu điểm" → chuyển sang highscores.html
+  -->
+  <div id="saveModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <h3>🎉 Hoàn thành!</h3>
+      <p>Bạn đạt <strong id="finalScore">0</strong> điểm</p>
+      <label for="playerName">Nhập tên của bạn:</label>
+      <input type="text" id="playerName" placeholder="Tên người chơi" maxlength="20" />
+      <button id="saveScoreBtn" class="btn">Lưu điểm</button>
+      <a href="index.html" class="btn btn-secondary">Về trang chủ</a>
+    </div>
+  </div>
+
+  <!-- Logic quiz: load câu hỏi, chấm điểm, lưu kết quả -->
+  <script src="js/game.js"></script>
+</body>
+</html>

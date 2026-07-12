@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Quiz — Highscores</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    .scores-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    .scores-table th, .scores-table td { padding: 0.6rem; text-align: left; border-bottom: 1px solid #eee; }
+    .scores-table th { background: #14afaf; color: #fff; }
+    .scores-table tr:nth-child(even) { background: #f9f9f9; }
+    .rank-1 { color: #f39c12; font-weight: 700; }
+    .rank-2 { color: #95a5a6; font-weight: 700; }
+    .rank-3 { color: #cd7f32; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="container" style="max-width: 500px;">
+    <h1 class="title">🏆 Bảng xếp hạng</h1>
+
+    <table class="scores-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Tên</th>
+          <th>Điểm</th>
+          <th>Ngày</th>
+        </tr>
+      </thead>
+      <tbody id="scoresBody">
+        <tr><td colspan="4" class="text-center">Chưa có điểm nào</td></tr>
+      </tbody>
+    </table>
+
+    <a href="index.html" class="btn">Về trang chủ</a>
+  </div>
+
+  <script src="js/highscores.js"></script>
+</body>
+</html>

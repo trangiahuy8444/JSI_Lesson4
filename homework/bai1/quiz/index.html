@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Quiz — Firebase Test</title>
+</head>
+<body>
+  <h1>Quick Quiz — Bài 1: Kiểm tra Firebase</h1>
+  <p>Mở DevTools (F12) → Console để xem kết quả kết nối.</p>
+
+  <!--
+    THỨ TỰ LOAD SCRIPT (quan trọng — không đổi):
+    1. Firebase SDK  → tạo biến global `firebase`
+    2. firebase-config.js → định nghĩa `firebaseConfig`
+    3. app.js → gọi firebase.initializeApp() và in Console
+  -->
+
+  <!-- [1] Firebase SDK — thư viện chính, load từ CDN của Google -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+
+  <!-- [2] File config — chứa object firebaseConfig của bạn -->
+  <script src="js/firebase-config.js"></script>
+
+  <!-- [3] Logic khởi tạo — kiểm tra kết nối và in Console -->
+  <script src="js/app.js"></script>
+</body>
+</html>
