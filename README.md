@@ -1,42 +1,47 @@
 # JSI16 — Web Developer (MindX)
 
-## Học sinh: Clone homework
+## Clone lần đầu (đầu buổi 4)
 
 ```bash
 git clone https://github.com/trangiahuy8444/JSI_Lesson4.git
-cd JSI
+cd JSI_Lesson4
 ```
 
-Branch mặc định (`main`) chỉ chứa **homework** — làm bài theo hướng dẫn trong folder `homework/`.
+Bạn sẽ có:
+
+```
+JSI_Lesson4/
+├── homework/                        ← Bài tập buổi 3
+└── JSI16-Lesson04/
+    └── student/                     ← Code thực hành buổi 4
+        └── HUONG-DAN.md             ← Hướng dẫn từng bước
+```
 
 ---
 
-## Cuối buổi 4: Clone sản phẩm hoàn chỉnh
+## Thực hành buổi 4
 
-Giáo viên sẽ thông báo khi publish branch đáp án. Học sinh chạy:
-
-### Cách 1: Clone mới (khuyến nghị)
-
-```bash
-git clone -b lesson04-complete https://github.com/trangiahuy8444/JSI_Lesson4.git JSI-complete
-cd JSI-complete
-```
-
-### Cách 2: Đã clone homework trước đó
-
-```bash
-cd JSI
-git fetch origin
-git checkout lesson04-complete
-```
-
-Sau đó mở folder `JSI16-Lesson04/complete/` — đây là code mẫu hoàn chỉnh buổi 4.
+1. Mở folder **`JSI16-Lesson04/student/`** bằng VS Code / Cursor
+2. Đọc **`HUONG-DAN.md`** — làm theo từng bước
+3. Giáo viên demo code hoàn chỉnh trên màn hình — bạn code theo hướng dẫn
 
 ---
 
-## Cấu trúc repo
+## Cuối buổi 4: Pull folder complete
 
-| Branch | Nội dung | Khi nào |
-|--------|----------|---------|
-| `main` | `homework/` | Clone đầu tiên |
-| `lesson04-complete` | `homework/` + `JSI16-Lesson04/complete/` | Cuối buổi 4 |
+Giáo viên sẽ thông báo khi publish đáp án. Chạy:
+
+```bash
+cd JSI_Lesson4
+git pull
+```
+
+Sau `git pull` sẽ xuất hiện thêm:
+
+```
+JSI16-Lesson04/
+├── student/       ← code bạn đã làm
+└── complete/      ← đáp án hoàn chỉnh (tham khảo)
+```
+
+Mở `JSI16-Lesson04/complete/` để so sánh với bài của bạn.

@@ -10,11 +10,10 @@
 # ── Tài liệu nội bộ giáo viên (KHÔNG BAO GIỜ push) ──
 HUONG-DAN-GITHUB.md
 **/HUONG-DAN-GV.md
+JSI16-Lesson04/LESSON-PLAN.md
 
-# ── Lesson 4: chỉ push lên branch riêng cuối buổi ──
+# ── Đáp án hoàn chỉnh — push cuối buổi (xóa dòng này khi publish) ──
 JSI16-Lesson04/complete/
-JSI16-Lesson04/student/
 
-# ── Các lesson khác: push từng buổi khi cần ──
+# ── Các lesson khác — push riêng từng buổi ──
 JSI16-Lesson03/
-JSI16-Lesson04/
