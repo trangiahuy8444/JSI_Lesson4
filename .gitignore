@@ -7,5 +7,14 @@
 # Logs
 *.log
 
-# MD
-HUONG-DAN-GV.md
+# ── Tài liệu nội bộ giáo viên (KHÔNG BAO GIỜ push) ──
+HUONG-DAN-GITHUB.md
+**/HUONG-DAN-GV.md
+
+# ── Lesson 4: chỉ push lên branch riêng cuối buổi ──
+JSI16-Lesson04/complete/
+JSI16-Lesson04/student/
+
+# ── Các lesson khác: push từng buổi khi cần ──
+JSI16-Lesson03/
+JSI16-Lesson04/
